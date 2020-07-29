@@ -1,6 +1,5 @@
 import random, sys
 
-print("ROCK, PAPER, SCISSORS")
 
 #These variables keep track of number of wins, losses and ties
 
@@ -8,19 +7,34 @@ wins = 0
 losses = 0
 ties = 0
 
+#introduction of the game
+
+print('Let us play ROCK, PAPER, SCISSORS')
+print('\n')
+      
+while True:
+    print("Wanna join the Game? \n Then press y for yes")
+    button = input()
+    if button == 'y':
+      break
+    else:
+      sys.exit()
+
 #the main game loop
 
 while True:
+    
+   
     
     print('%s Wins, %s Losses, %s Ties' %(wins, losses,ties))
     
     #the player input loop
     while True:
         
-        print("Enter your move: (r)ock, (p)aper, (s)cissor or (q)uit ")
+        print("Enter your move: (r)ock, (p)aper, (s)cissor or q(uit)")
         playermove = input()
-        if playermove == "q":
-            sys.exit() 
+        if playermove =="q":
+          sys.exit()
         elif playermove == "r" or playermove == "p" or playermove == "s":
             break
         else: 
