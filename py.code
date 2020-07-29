@@ -26,8 +26,6 @@ while True:
 
 while True:
     
-   
-    
     print('%s Wins, %s Losses, %s Ties' %(wins, losses,ties))
     
     #the player input loop
